@@ -1,8 +1,4 @@
-
-
-import java.util.*;
-
-// Äè¼Ó Á¤·Ä
+// ì¾Œì† ì •ë ¬
 public class Solution {
     public int[] keyData;
 
@@ -10,9 +6,9 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         keyData = new int[size];
         for(int i=0;i<size;i++){
-            System.out.print((i+1) + "¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+            System.out.print((i+1) + "ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
             keyData[i] = scanner.nextInt();
-        } // °ªÀ» ÀÔ·Â¹Ş´Â´Ù.
+        } // ê°’ì„ ì…ë ¥ë°›ëŠ”ë‹¤.
 
     }
 
@@ -20,8 +16,8 @@ public class Solution {
     {
         int i = left, j = right;
         int tmp;
-        int pivot = arr[(left + right) / 2]; // Áß°£ÂëÀ» ÇÇ¹şÀ¸·Î µĞ´Ù
-        while (i <= j) { // Å©·Î½º ¿À¹ö°¡ ³ª±â Àü±îÁö °è¼Ó ºñ±³ÇÑ´Ù
+        int pivot = arr[(left + right) / 2]; // ì¤‘ê°„ì¯¤ì„ í”¼ë²—ìœ¼ë¡œ ë‘”ë‹¤
+        while (i <= j) { // í¬ë¡œìŠ¤ ì˜¤ë²„ê°€ ë‚˜ê¸° ì „ê¹Œì§€ ê³„ì† ë¹„êµí•œë‹¤
             while (arr[i] < pivot)
                 i++;
             while (arr[j] > pivot)
@@ -47,10 +43,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int size = 0; // size Å©±â Á¶Àı
+        int size = 0; // size í¬ê¸° ì¡°ì ˆ
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("»çÀÌÁî¸¦ Á¶ÀıÇÕ´Ï´Ù :");
+        System.out.print("ì‚¬ì´ì¦ˆë¥¼ ì¡°ì ˆí•©ë‹ˆë‹¤ :");
         size = scanner.nextInt();
 
         Solution solution = new Solution();
